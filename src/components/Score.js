@@ -1,24 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-function Score() {
+function Score({ score }) {
 
-  const [score, setScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
   const maxScore = 10
-
-  const incrementScore = () => {
-    setScore(prevScore => prevScore + 1)
-  }
-
-  const resetScore = () => {
-    setScore(0)
-  }
-
-  const updateBest = () => {
+  
+  // Updates the best score if beaten
+  useEffect(() => {
     if (score > bestScore) {
       setBestScore(score)
     }
-  }
+  })
 
   return (
     <>

@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function Card({src, alt, handleClick}) {
-
-  const [clicked, setClicked] = useState(false)
+function Card({src, alt}) {
 
   return (
-    <div className="card" onClick={handleClick}>
+    <div className="card">
       <img className="card-img-top" src={src} alt={alt} />
     </div>
   )

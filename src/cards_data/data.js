@@ -1,4 +1,4 @@
-let cardData = [
+let cards = [
   {
     src: 'https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
     alt: 'Silver tabby kitten yawning',
@@ -42,9 +42,9 @@ let cardData = [
   }
 ]
 
-cardData = cardData.map((x, i) => {
-  x.id = i + 1
-  return x
+cards = cards.map((card, i) => {
+  card.id = i + 1
+  return card
 })
 
-export default cardData
+export default cards

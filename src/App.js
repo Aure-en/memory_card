@@ -1,12 +1,19 @@
-import React from 'react';
-import Cards from './components/Cards';
+import React, { useState } from 'react';
+import Game from './components/Game';
 import Header from './components/Header'
 
 function App() {
+
+  const [score, setScore] = useState(0)
+
+  const getScore = (score) => {
+    setScore(score)
+  }
+
   return (
     <div className="App">
-      <Header />
-      <Cards />
+      <Header score={score} />
+      <Game getScore={getScore} />
     </div>
   );
 }
