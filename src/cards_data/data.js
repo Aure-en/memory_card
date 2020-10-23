@@ -39,7 +39,7 @@ let cards = [
   {
     src: 'https://images.unsplash.com/photo-1545249390-6bdfa286032f?ixlib=rb-1.2.1&auto=format&fit=crop&w=594&q=80',
     alt: 'Cat playing on scratching post',
-  }
+  },
 ]
 
 cards = cards.map((card, i) => {

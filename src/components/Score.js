@@ -13,11 +13,11 @@ function Score({ score }) {
   })
 
   return (
-    <>
-      <div>Score: {score}</div>
-      {(score === maxScore) && <small>Congratulations, you won! Click on any card to play again.</small>}
+    <div className="score d-flex">
+      {(score === maxScore) && <small className="text-center mr-3">Congratulations, you won!<br/>Click on any card to play again.</small>}
+      <div className="mr-3">Score: {score}</div>
       <div>Best Score: {bestScore}</div>
-    </>
+    </div>
   )
 }
 

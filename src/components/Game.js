@@ -38,8 +38,8 @@ function Game({ getScore }) {
   })
 
   return (
-    <main className="container-fluid">
-      <ul className="row row-cols-2 row-cols-sm-3 row-cols-md-5">
+    <main className="container-fluid d-flex align-items-center">
+      <ul className="row row-cols-1 row-cols-sm-3 row-cols-md-5 p-3">
         { cards.map( (card) => <li className="col px-0" key={card.id} onClick={(event) => handleClick(event)} id={card.id}>{card.card}</li> ) }
       </ul>
     </main>

@@ -1,0 +1,26 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-height: 40vh;
+  width: auto;
+  object-fit: cover;
+}
+
+header {
+  background-color: rgb(238, 222, 212);
+}

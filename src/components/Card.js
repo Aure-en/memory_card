@@ -4,7 +4,7 @@ function Card({src, alt}) {
 
   return (
     <div className="card">
-      <img className="card-img-top" src={src} alt={alt} />
+      <img src={src} alt={alt} />
     </div>
   )
 }
